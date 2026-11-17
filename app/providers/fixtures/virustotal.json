@@ -1,0 +1,57 @@
+{
+  "_comment": "Synthetic VirusTotal v3 responses for offline demos. Not real provider records.",
+
+  "https://malware.example.com/payload.exe": {
+    "status": 200,
+    "body": {"data": {"type": "url", "id": "fixture", "attributes": {
+      "last_analysis_date": 1762905600,
+      "last_analysis_stats": {"malicious": 12, "suspicious": 1, "harmless": 60, "undetected": 20, "timeout": 0}
+    }}}
+  },
+  "https://phish.example.net/login?session=42": {
+    "status": 200,
+    "body": {"data": {"type": "url", "id": "fixture", "attributes": {
+      "last_analysis_date": 1762992000,
+      "last_analysis_stats": {"malicious": 4, "suspicious": 2, "harmless": 65, "undetected": 22, "timeout": 0}
+    }}}
+  },
+  "https://clean.example.org/": {
+    "status": 200,
+    "body": {"data": {"type": "url", "id": "fixture", "attributes": {
+      "last_analysis_date": 1763078400,
+      "last_analysis_stats": {"malicious": 0, "suspicious": 0, "harmless": 70, "undetected": 23, "timeout": 0}
+    }}}
+  },
+  "https://slow.example.com/": {"simulate": "timeout"},
+
+  "44d88612fea8a8f36de82e1278abb02f": {
+    "status": 200,
+    "body": {"data": {"type": "file", "id": "fixture", "attributes": {
+      "last_analysis_date": 1762905600,
+      "meaningful_name": "eicar.com",
+      "popular_threat_classification": {"suggested_threat_label": "virus.eicar/test"},
+      "last_analysis_stats": {"malicious": 62, "suspicious": 0, "harmless": 0, "undetected": 10}
+    }}}
+  },
+  "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f": {
+    "status": 200,
+    "body": {"data": {"type": "file", "id": "fixture", "attributes": {
+      "last_analysis_date": 1762905600,
+      "meaningful_name": "eicar.com",
+      "popular_threat_classification": {"suggested_threat_label": "virus.eicar/test"},
+      "last_analysis_stats": {"malicious": 62, "suspicious": 0, "harmless": 0, "undetected": 10}
+    }}}
+  },
+  "3395856ce81f2b7382dee72602f798b642f14140": {
+    "status": 429,
+    "body": {"error": {"code": "QuotaExceededError", "message": "Quota exceeded"}}
+  },
+  "d41d8cd98f00b204e9800998ecf8427e": {
+    "status": 200,
+    "body": {"data": {"type": "file", "id": "fixture", "attributes": {
+      "last_analysis_date": 1763078400,
+      "last_analysis_stats": {"malicious": 0, "suspicious": 0, "harmless": 0, "undetected": 72}
+    }}}
+  },
+  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {"simulate": "timeout"}
+}

@@ -1,0 +1,17 @@
+{
+  "_comment": "Synthetic URLhaus responses for offline demos. Not real provider records.",
+
+  "https://malware.example.com/payload.exe": {
+    "status": 200,
+    "body": {
+      "query_status": "ok",
+      "id": "1000001",
+      "urlhaus_reference": "https://urlhaus.abuse.ch/url/1000001/",
+      "url": "https://malware.example.com/payload.exe",
+      "url_status": "online",
+      "threat": "malware_download",
+      "date_added": "2026-11-01 10:15:00 UTC",
+      "tags": ["exe", "AgentTesla"]
+    }
+  }
+}
