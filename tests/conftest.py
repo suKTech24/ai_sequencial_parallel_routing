@@ -8,16 +8,9 @@ import pytest
 from app.config import Settings
 from app.schemas import (
     Evidence,
-    HashType,
     Indicator,
-    IndicatorType,
     LookupStatus,
     ProviderName,
-)
-
-URL = Indicator(type=IndicatorType.URL, value="https://malware.example.com/payload.exe")
-MD5 = Indicator(
-    type=IndicatorType.HASH, value="44d88612fea8a8f36de82e1278abb02f", hash_type=HashType.MD5
 )
 
 

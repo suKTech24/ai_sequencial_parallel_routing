@@ -22,7 +22,7 @@ curl -X POST localhost:8000/analyze -H "content-type: application/json" \
 Checks:
 
 ```bash
-uv run pytest          # 61 tests, no network or keys needed
+uv run pytest          # 11 focused tests, no network or keys needed
 uv run ruff check . && uv run ruff format --check .
 uv run mypy            # strict
 ```
